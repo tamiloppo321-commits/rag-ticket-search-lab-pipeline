@@ -1,0 +1,82 @@
+[
+  {
+    "ticket_id": "TICK-001",
+    "title": "Password reset authentication failure",
+    "category": "Authentication",
+    "priority": "High",
+    "description": "Users cannot log in after resetting their password.",
+    "resolution": "Clear the stale session and retry authentication; reset the password again if required."
+  },
+  {
+    "ticket_id": "TICK-002",
+    "title": "Database connection timeout",
+    "category": "Database",
+    "priority": "High",
+    "description": "The application frequently times out while connecting to the database.",
+    "resolution": "Check connection pool limits, database health, and network latency."
+  },
+  {
+    "ticket_id": "TICK-003",
+    "title": "Email notifications delayed",
+    "category": "Email",
+    "priority": "Medium",
+    "description": "Users are not receiving email notifications on time.",
+    "resolution": "Inspect the outbound mail queue and notification worker status."
+  },
+  {
+    "ticket_id": "TICK-004",
+    "title": "Application performance degradation",
+    "category": "Performance",
+    "priority": "Medium",
+    "description": "The application is responding slowly during peak usage.",
+    "resolution": "Review CPU and memory utilization and identify slow requests."
+  },
+  {
+    "ticket_id": "TICK-005",
+    "title": "Payment processing failure",
+    "category": "Payment",
+    "priority": "High",
+    "description": "Payment transactions are failing intermittently.",
+    "resolution": "Check payment gateway connectivity, credentials, and transaction logs."
+  },
+  {
+    "ticket_id": "TICK-006",
+    "title": "Account sign-in credentials rejected",
+    "category": "Authentication",
+    "priority": "High",
+    "description": "Valid users receive authentication errors when signing in.",
+    "resolution": "Validate identity-provider configuration and refresh authentication tokens."
+  },
+  {
+    "ticket_id": "TICK-007",
+    "title": "Slow database query performance",
+    "category": "Database",
+    "priority": "Medium",
+    "description": "Database queries are taking longer than expected.",
+    "resolution": "Review query plans, indexes, and database resource utilization."
+  },
+  {
+    "ticket_id": "TICK-008",
+    "title": "Startup application crash",
+    "category": "Performance",
+    "priority": "High",
+    "description": "The application crashes immediately after startup.",
+    "resolution": "Review startup logs and validate required configuration and dependencies."
+  },
+  {
+    "ticket_id": "TICK-009",
+    "title": "Password reset link expired",
+    "category": "Authentication",
+    "priority": "Medium",
+    "description": "Password reset links expire before users can complete the reset.",
+    "resolution": "Review reset-token lifetime and clock synchronization."
+  },
+  {
+    "ticket_id": "TICK-010",
+    "title": "Notification worker stopped",
+    "category": "Email",
+    "priority": "High",
+    "description": "Email notifications stopped after a worker restart.",
+    "resolution": "Restart the worker and inspect queue and service health."
+  }
+]
